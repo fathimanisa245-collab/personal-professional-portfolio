@@ -905,9 +905,17 @@ img {
   margin-bottom: 0.25rem;
 }
 
-.contact-item span {
+.contact-item span,
+.contact-item .contact-link {
   color: var(--text-muted);
   font-size: 0.95rem;
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.contact-item .contact-link:hover {
+  color: var(--primary-color);
+  text-decoration: underline;
 }
 
 .contact-socials {

@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const sectionHeight = current.offsetHeight;
             const sectionTop = current.offsetTop - 100;
             const sectionId = current.getAttribute('id');
-            const navLink = document.querySelector(`.nav-menu a[href*=${sectionId}]`);
+            const navLink = document.querySelector(`.nav-menu a[href*="${sectionId}"]`);
 
             if(navLink) {
                 if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
