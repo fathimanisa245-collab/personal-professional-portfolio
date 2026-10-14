@@ -1250,3 +1250,50 @@ textarea.form-control {
     grid-template-columns: 1fr;
   }
 }
+
+/* Availability Badge Feature */
+.availability-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    padding: 9px 14px;
+    margin-bottom: 20px;
+    border: 1px solid #bbf7d0;
+    border-radius: 50px;
+    background-color: #f0fdf4;
+    color: #166534;
+    font-size: 0.9rem;
+    font-weight: 600;
+    line-height: 1.4;
+    max-width: 100%;
+}
+
+.availability-dot {
+    width: 9px;
+    height: 9px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background-color: #22c55e;
+    box-shadow: 0 0 0 3px #dcfce7;
+}
+
+@media (max-width: 480px) {
+    .availability-badge {
+        font-size: 0.8rem;
+        padding: 8px 11px;
+        gap: 8px;
+        text-decoration: none;
+cursor: pointer;
+transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+}
+
+.availability-badge:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(34, 197, 94, 0.18);
+}
+
+.availability-badge:focus-visible {
+    outline: 3px solid #22c55e;
+    outline-offset: 4px;
+}
